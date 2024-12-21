@@ -25,6 +25,7 @@
 # CRUD de Cadastro de Usuários
 ![](https://img.shields.io/badge/php-20b2aa?style=for-the-badge&logo=php&logoColor=white)
  ![](https://img.shields.io/badge/mysql-fe4164?style=for-the-badge&logo=mysql&logoColor=white)
+ ![](https://img.shields.io/badge/bootstrap-7511f6?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 ![](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
 
@@ -43,7 +44,8 @@ WIP - Meu primeiro projeto em PHP, consiste em um crud para cadastro de usuário
 
 ### 🛸 Requisitos
 - PHP v8.0.12
-- mySQL
+- mySQL v8.0.40
+- Bootstrap v5
 
 ### 🛠 Execute a Aplicação
 Para executar a aplicação na sua máquina local, siga estes passos:
@@ -62,6 +64,8 @@ Esse projeto será desenvolvido com as seguintes tecnologias:
 
 - PHP
 - mySQL
+- Xampp
+- Bootstrap
 
 ## 💻 Layout
 
