@@ -7,8 +7,8 @@
         <input type="text" name="name" class="form-control">
     </div>
     <div class="mb-3">
-        <label for="date-bth">Data de Nascimento</label>
-        <input type="date" name="date-bth" class="form-control">
+        <label for="date_bth">Data de Nascimento</label>
+        <input type="date" name="date_bth" class="form-control">
     </div>
     <div class="mb-3">
         <label for="email">E-mail</label>
