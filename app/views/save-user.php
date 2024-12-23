@@ -42,3 +42,4 @@ switch ($_REQUEST["act"]) {
     case ("delete"):
         break;
 }
+?>
