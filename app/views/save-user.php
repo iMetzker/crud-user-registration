@@ -29,7 +29,7 @@ switch ($_REQUEST["act"]) {
                 icon: 'error',
                 title: 'Oops...',
                 text: 'Algo deu errado, cadastro não realizado!',
-                });.then(() => {
+                }).then(() => {
                     window.location.href = '?page=list';
                 });
             </script>";
