@@ -1,4 +1,4 @@
-<h1>novo usuário</h1>
+<h1>Novo Usuário</h1>
 
 <form action="?page=save" method="POST">
     <input type="hidden" name="act" value="add">

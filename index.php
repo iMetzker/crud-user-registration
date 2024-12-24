@@ -89,6 +89,9 @@
                     case ("save"):
                         include("app/views/save-user.php");
                         break;
+                    case ("edit"):
+                        include("app/views/edit-user.php");
+                        break;
                     default:
                         print "<h1>Bem vindo!</h1>";
                 }

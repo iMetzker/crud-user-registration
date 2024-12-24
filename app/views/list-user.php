@@ -27,8 +27,14 @@ if ($amout_users > 0) {
         echo "<td>" . $row->date_bth . "</td>";
         echo "<td>" . $row->email . "</td>";
         echo "<td>
-                <button class='btn blue-300'>Editar <i class='bi bi-pencil-square'></i></button>
-                <button class='btn btn-del'><i class=\"bi bi-person-slash\"></i></button>
+                <button onclick=\"location.href='?page=edit&id=" . $row->id . "';\" class='btn blue-300'>Editar <i class='bi bi-pencil-square'></i></button>
+                <button onclick=\"
+                if(
+                confirm('Tem certeza que deseja excluir este usuário?')){
+                location.href='?page=save&act=delete&id=" . $row->id . "'}else {
+                false
+                }\"
+                 class='btn btn-del'><i class=\"bi bi-person-slash\"></i></button>
             </td>";
         echo "</tr>";
     }
