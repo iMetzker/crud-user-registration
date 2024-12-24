@@ -11,7 +11,7 @@ $amout_users = $result->num_rows;
 if ($amout_users > 0) {
 
     // trazendo os objetos do resultado da consulta ($result) e alocando na variável row
-    echo "<table class='table table-hover table-striped table-bordered'>";
+    echo "<table class='table'>";
     echo "<tr>";
     echo "<th>#</th>";
     echo "<th>Nome</th>";
@@ -27,8 +27,8 @@ if ($amout_users > 0) {
         echo "<td>" . $row->date_bth . "</td>";
         echo "<td>" . $row->email . "</td>";
         echo "<td>
-                <button class='btn blue-300 btn-primary'><i class='bi bi-pencil-square'></i>Editar</button>
-                <button class='btn btn-blue-300 btn-danger'><i class='bi bi-trash3-fill'></i> Excluir</button>
+                <button class='btn blue-300'>Editar <i class='bi bi-pencil-square'></i></button>
+                <button class='btn btn-del'><i class=\"bi bi-person-slash\"></i></button>
             </td>";
         echo "</tr>";
     }

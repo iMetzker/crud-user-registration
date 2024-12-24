@@ -1,0 +1,82 @@
+/* Header do menu */
+.header-exit {
+  justify-content: space-between;
+}
+
+.header-exit i {
+  font-size: 1.3rem;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo-title i{
+    font-size: 30px;
+    color: #3575af;
+}
+
+.logo-title h5{
+    margin: 0 !important;
+    padding-left: 7px;
+    font-size: 30px;
+}
+
+.logo-title span{
+    color: #3575af;
+    font-size: 50px;
+    margin-bottom: 17px;
+}
+
+.menu-user-edit {
+    margin-top: 30px;
+}
+
+.nav-user-title {
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #3575af;
+    color: #ffffff;
+}
+
+.nav-user-title:hover {
+    cursor: auto;
+    color: #ffffff;
+}
+
+ul.users-ul {
+    list-style: none;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+
+/* Botões da listagem de usuários */
+
+.blue-300 {
+  color: #3575af;
+  font-weight: 500;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+}
+
+.blue-300:hover,
+.btn-del:hover {
+  background-color: #3575af;
+  color: #ffffff;
+  transition: ease-in-out 0.3s;
+}
+
+/* .btn-blue-300 {
+      color: #3575af;
+      font-weight: 500;
+      background-color: #ffffff;
+      border: 1px solid #dee2e6;
+  } */
+
+.btn-del {
+  color: #3575af;
+  border: 1px solid #dee2e6;
+}
