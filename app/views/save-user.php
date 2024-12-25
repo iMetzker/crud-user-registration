@@ -76,6 +76,7 @@ switch ($_REQUEST["act"]) {
                 });
             </script>";
         }
+        break;
 
     case ("delete"):
 

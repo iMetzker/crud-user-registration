@@ -1,3 +1,30 @@
+body {
+  background-color: #f1f4fa;
+}
+
+main {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "navbar-desktop navbar-desktop"
+    "navbar-desktop-content container";
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto 1fr;
+}
+
+main > div.navbar-desktop {
+  grid-area: navbar-desktop;
+}
+
+main > div.navbar-desktop-content {
+  grid-area: navbar-desktop-content;
+}
+
+main > div.container {
+  grid-area: container;
+}
+
+
 /* Header do menu */
 .header-exit {
   justify-content: space-between;
@@ -7,50 +34,58 @@
   font-size: 1.3rem;
 }
 
-.logo-title {
-    display: flex;
-    align-items: center;
+.logo-title,
+.navbar-desktop-logo {
+  display: flex;
+  align-items: center;
 }
 
-.logo-title i{
-    font-size: 30px;
-    color: #3575af;
+.logo-title i,
+.navbar-desktop-logo i {
+  font-size: 30px;
+  color: #3575af;
 }
 
-.logo-title h5{
-    margin: 0 !important;
-    padding-left: 7px;
-    font-size: 30px;
+.logo-title h5,
+.navbar-desktop-logo h5 {
+  margin: 0 !important;
+  padding-left: 7px;
+  font-size: 30px;
 }
 
-.logo-title span{
-    color: #3575af;
-    font-size: 50px;
-    margin-bottom: 17px;
+.logo-title span,
+.navbar-desktop-logo span {
+  color: #3575af;
+  font-size: 50px;
+  margin-bottom: 17px;
 }
 
 .menu-user-edit {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .nav-user-title {
-    margin: 10px 0 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #3575af;
-    color: #ffffff;
+  margin: 10px 0 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #3575af;
+  color: #ffffff;
 }
 
 .nav-user-title:hover {
-    cursor: auto;
-    color: #ffffff;
+  cursor: auto;
+  color: #ffffff;
+}
+
+.menu-user-edit .navbar-nav {
+  padding: 10px 10px 0 10px;
 }
 
 ul.users-ul {
-    list-style: none;
-    border: 1px solid #ededed;
-    border-radius: 5px;
-    padding-left: 20px;
+  list-style: none;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  padding-left: 20px;
 }
 
 /* Botões da listagem de usuários */
@@ -69,14 +104,97 @@ ul.users-ul {
   transition: ease-in-out 0.3s;
 }
 
-/* .btn-blue-300 {
-      color: #3575af;
-      font-weight: 500;
-      background-color: #ffffff;
-      border: 1px solid #dee2e6;
-  } */
-
 .btn-del {
   color: #3575af;
   border: 1px solid #dee2e6;
+}
+
+.navbar-brand i {
+  font-size: 25px;
+  color: #3575af;
+}
+
+/* menu desktop */
+.logo-name {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-header-desktop {
+  border-bottom: 1px solid #bfc6d1;
+  background-color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.navbar-desktop-content {
+  padding: 30px;
+  border-right: 1px solid #bfc6d1;
+  background-color: #ffffff;
+}
+
+.navbar-desktop-logo {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #ffffff;
+}
+
+.navbar-header-desktop .navbar-brand i {
+  font-size: 30px;
+  color: #3575af;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+.row {
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.navbar-toggler {
+  color: #3575af;
+  font-size: 30px;
+  border: none;
+}
+
+@media (max-width: 1311px) {
+  .container {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .row:has(table) {
+    min-width: 940px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1190px) {
+  main {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar-desktop,
+  .navbar-desktop-content {
+    display: none;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav-mobile {
+    display: block;
+  }
 }
