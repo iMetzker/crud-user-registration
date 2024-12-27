@@ -21,10 +21,13 @@ if ($amout_users > 0) {
     echo "</tr>";
 
     while ($row = $result->fetch_object()) {
+        // formatando data de nascimento
+        $date = new DateTime($row->date_bth);
+
         echo "<tr>";
         echo "<td>" . $row->id . "</td>";
         echo "<td>" . $row->name . "</td>";
-        echo "<td>" . $row->date_bth . "</td>";
+        echo "<td>" . $date->format('d/m/Y') . "</td>";
         echo "<td>" . $row->email . "</td>";
         echo "<td>
                 <button onclick=\"location.href='?page=edit&id=" . $row->id . "';\" class='btn blue-300'>Editar <i class='bi bi-pencil-square'></i></button>

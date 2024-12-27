@@ -145,7 +145,7 @@
                             include("app/views/edit-user.php");
                             break;
                         default:
-                            print "<h1>Bem vindo!</h1>";
+                        include("app/views/home.php");
                     }
                     ?>
                 </div>
