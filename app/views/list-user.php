@@ -19,7 +19,7 @@ if ($amout_users > 0) {
     echo "<th>E-mail</th>";
     echo "<th>Ações</th>";
     echo "</tr>";
-
+    
     while ($row = $result->fetch_object()) {
         // formatando data de nascimento
         $date = new DateTime($row->date_bth);

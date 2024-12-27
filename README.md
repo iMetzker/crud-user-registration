@@ -16,8 +16,6 @@
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-execute">Run</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-execute">Deploy</a>
 </p>
 
 <br> <br>
@@ -32,8 +30,7 @@
 <br>
 
 ## 🚀 Projeto
-
-WIP - Meu primeiro projeto em PHP, consiste em um crud para cadastro de usuários
+O projeto consiste na criação de um CRUD para cadastro de usuários, sendo implementado com PHP e mySQL.
 
 ### ⚙ Funcionalidades
 
@@ -45,7 +42,6 @@ WIP - Meu primeiro projeto em PHP, consiste em um crud para cadastro de usuário
 ### 🛸 Requisitos
 - PHP v8.0.12
 - mySQL v8.0.40
-- Bootstrap v5
 
 ### 🛠 Execute a Aplicação
 Para executar a aplicação na sua máquina local, siga estes passos:
@@ -66,7 +62,8 @@ Esse projeto será desenvolvido com as seguintes tecnologias:
 - mySQL
 - Xampp
 - Bootstrap
+- Sweet Alert
 
 ## 💻 Layout
 
-// WIP
+<img src="./assets/img/preview-cadastr3.png" alt="preview do projeto em funcionamento">
