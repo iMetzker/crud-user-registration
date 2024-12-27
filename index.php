@@ -15,9 +15,9 @@
         <nav class="navbar bg-body-tertiary nav-mobile">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <i class="bi bi-list"></i>
+                    <i class="bi bi-list"></i>
                 </button>
-                <a class="navbar-brand" href="#"><i class="bi bi-person"></i></i></a>
+                <a class="navbar-brand nav-user" href="#" onclick="newFeature()"><i class="bi bi-person"></i></i></a>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header header-exit">
                         <div class="offcanvas-title logo-title" id="offcanvasNavbarLabel">
@@ -55,12 +55,12 @@
                             <span>Opções de Usuário</span>
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index.php">
+                                    <a class="nav-link" href="index.php" onclick="newFeature()">
                                         <i class="bi bi-gear"></i> Configurações de Conta
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index.php">
+                                    <a class="nav-link" href="index.php" onclick="newFeature()">
                                         <i class="bi bi-box-arrow-right"></i> Sair
                                     </a>
                                 </li>
@@ -82,7 +82,9 @@
                         <span>.</span>
                     </div>
                 </div>
-                <a class="navbar-brand" href="#"><i class="bi bi-person"></i></i></a>
+                <a class="navbar-brand nav-user" href="#" onclick="newFeature()">
+                    <i class="bi bi-person"></i>
+                </a>
             </div>
         </div>
 
@@ -112,12 +114,12 @@
                 <span>Opções de Usuário</span>
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">
+                        <a class="nav-link" href="index.php" onclick="newFeature()">
                             <i class="bi bi-gear"></i> Configurações de Conta
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">
+                        <a class="nav-link" href="index.php" onclick="newFeature()">
                             <i class="bi bi-box-arrow-right"></i> Sair
                         </a>
                     </li>
@@ -145,7 +147,7 @@
                             include("app/views/edit-user.php");
                             break;
                         default:
-                        include("app/views/home.php");
+                            include("app/views/home.php");
                     }
                     ?>
                 </div>
@@ -156,6 +158,18 @@
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        function newFeature() {
+            event.preventDefault();
+
+            Swal.fire({
+                title: "Funcionalidade ainda não implementada!",
+                icon: "info",
+                draggable: true
+            });
+        };
+    </script>
 </body>
 
 </html>
