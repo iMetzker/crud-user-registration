@@ -1,17 +1,3 @@
-<table align="left">
-    <tr>
-        <td>
-            <b>
-              <a href="README.md"> 🇧🇷 Português </a>
-            </b>
-        </td>
-        <td>
-            <a href="readme-us.md"> 🇺🇸 English </a>
-        </td>
-    </tr>
-</table>
-
-
 <p align="right">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
